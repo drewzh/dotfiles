@@ -1,0 +1,61 @@
+{
+  "name": "atom-runner",
+  "main": "./lib/atom-runner",
+  "version": "2.2.0",
+  "description": "Runs scripts inside of Atom.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsegal/atom-runner"
+  },
+  "dependencies": {
+    "ansi-to-html": "0.1.x"
+  },
+  "license": "MIT",
+  "readme": "# Atom Runner\n\nThis package will run various script files inside of Atom.\nIt currently supports JavaScript, CoffeeScript, Ruby, Python, Go, and Bash\nscripts. You can add more!\n\n![Example](https://raw.githubusercontent.com/lsegal/atom-runner/master/resources/screenshot-1.png)\n\n## Using\n\n* Hit Ctrl+R (Alt+R on Win/Linux) to launch the runner for the active window.\n* Hit Ctrl+Shift+R (Alt+Shift+R on Win/Linux) to run the currently selected\n  text in the active window.\n* Hit Ctrl+Shift+C to kill a currently running process.\n* Hit Escape to close the runner window.\n\n## Features\n\n* A docked runner window with ANSI support and ESC keybinding to close.\n* PATH and environment variable detection on OSX.\n* Shebang executable detection in all source files.\n* Configurable commands based on file scope or filename matches.\n* Execute unsaved file buffers!\n\n## Configuring\n\nThis package uses the following default configuration:\n\n```cson\n'runner':\n  'scopes':\n    'coffee': 'coffee'\n    'js': 'node'\n    'ruby': 'ruby'\n    'python': 'python'\n    'go': 'go run'\n    'shell': 'bash'\n  'extensions':\n    'spec.coffee': 'mocha'\n```\n\n**Note**: If a shebang is detected, that line will supersede the\n          default registered command.\n\nYou can add more commands for a given language scope, or add commands by\nextension instead (if multiple extensions use the same syntax). Extensions\nare searched before scopes (syntaxes).\n\nTo do so, add the configuration to `~/.atom/config.cson` in the format provided\nabove.\n\nThe mapping is `SCOPE|EXT => EXECUTABLE`, so to run JavaScript files through\nphantom, you would do:\n\n```cson\n'runner':\n  'scopes':\n    'js': 'phantom'\n```\n\nNote that the `source.` prefix is ignored for syntax scope listings.\n\nSimilarly, in the extension map:\n\n```cson\n'runner':\n  'extensions':\n    'js': 'phantom'\n```\n\nNote that the `.` extension prefix is ignored for extension listings.\n\n## License & Copyright\n\nThis package is Copyright (c) Loren Segal 2014 and is licensed under the MIT\nlicense.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lsegal/atom-runner/issues"
+  },
+  "homepage": "https://github.com/lsegal/atom-runner",
+  "_id": "atom-runner@2.2.0",
+  "_shasum": "8b83a5787f37741af674248bac0916fe6d79876b",
+  "_resolved": "file:../d-11515-6905-1m14uvo/package.tgz",
+  "_from": "../d-11515-6905-1m14uvo/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "ansi-to-html",
+        "version": "0.1.1",
+        "path": "node_modules/ansi-to-html/lib/ansi_to_html.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/atom-runner-view.coffee",
+        "lib/atom-runner.coffee"
+      ],
+      ".js": [
+        "node_modules/ansi-to-html/grunt.js",
+        "node_modules/ansi-to-html/lib/ansi_to_html.js"
+      ],
+      ".json": [
+        "node_modules/ansi-to-html/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "examples",
+          "lib",
+          "",
+          "spec"
+        ],
+        "dependencies": {
+          "ansi-to-html": "0.1.x"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+"*":
+  editor:
+    showIndentGuide: true
+    tabLength: 4
+    scrollPastEnd: true
+    invisibles: {}
+    showInvisibles: true
+    fontSize: 15
+  core:
+    autoHideMenuBar: true
+    themes: [
+      "seti-ui"
+      "seti-monokai"
+    ]
+  "exception-reporting":
+    userId: "d388e17d-5657-16d6-1929-ede73c8a789f"
+  welcome:
+    showOnStartup: false
+  linter:
+    showErrorInline: false
+    statusBar: "Show error of the selected line"
+  minimap:
+    plugins:
+      "git-diff": true
+      "find-and-replace": true
+      selection: true
+  "spell-check": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    suggestionListFollows: "Word"

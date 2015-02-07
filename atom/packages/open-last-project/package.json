@@ -1,0 +1,77 @@
+{
+  "name": "open-last-project",
+  "main": "lib/main",
+  "version": "0.2.2",
+  "description": "An Atom.io package that automatically reopens the last project and files you were working on.",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielmahon/atom-open-last-project.git"
+  },
+  "homepage": "https://github.com/danielmahon/atom-open-last-project",
+  "bugs": {
+    "url": "https://github.com/danielmahon/atom-open-last-project/issues"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-apm": "0.0.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-lesslint": "~1.0.0",
+    "grunt-verb": "^0.2.4",
+    "verb": "~0.2.6",
+    "chai": "~1.9.1",
+    "mocha": "*"
+  },
+  "author": {
+    "name": "Daniel Mahon",
+    "url": "https://github.com/danielmahon"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/danielmahon/open-last-project/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "docs",
+    "documentation",
+    "generate",
+    "generator",
+    "markdown",
+    "templates",
+    "verb"
+  ],
+  "readme": "# open-last-project\n\n> An Atom.io package that automatically reopens the last project and files you were working on.\n\n## Install\nYou can install **open-last-project** using the Preferences pane.\n\n## Todo\n+ Remove that pesky untitled file upon new window\n\n## Packages\nTry these awesome packages:\n+ [project-switcher](https://atom.io/packages/project-switcher)\n\n## Author\n\n**Daniel Mahon**\n \n+ [github/danielmahon](https://github.com/danielmahon)\n+ [twitter/danielmahon](http://twitter.com/danielmahon) \n\n## License\nCopyright (c) 2014 Daniel Mahon, contributors.  \nReleased under the MIT license\n\n***\n",
+  "readmeFilename": "README.md",
+  "_id": "open-last-project@0.2.2",
+  "dist": {
+    "shasum": "93b7cc2300aaf49454efd1fd98b3f69591d064df"
+  },
+  "_resolved": "file:../d-11516-23394-kcsfe4/package.tgz",
+  "_from": "../d-11516-23394-kcsfe4/package.tgz",
+  "_shasum": "195781464918495c7d4629cbc86b59079ac3ede4",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".js": [
+        "Gruntfile.js",
+        "lib/main.js",
+        "lib/open-last-project.js"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

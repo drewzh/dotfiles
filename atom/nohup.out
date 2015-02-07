@@ -1,0 +1,71 @@
+[9081:0206/131252:ERROR:browser_main_loop.cc(164)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+MESA-LOADER: could not create udev device for fd 12
+MESA-LOADER: could not create udev device for fd 12
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[9124:0206/131253:ERROR:sandbox_linux.cc(301)] InitializeSandbox() called with multiple threads in process gpu-process
+[9136:0206/131253:INFO:renderer_main.cc(211)] Renderer process started
+App load time: 532ms
+[9081:0206/131256:INFO:CONSOLE(117)] "Loading Emmet extensions from", source: /home/drew/.atom/packages/emmet/lib/emmet.coffee (117)
+[9081:0206/131256:INFO:CONSOLE(134)] "Emmet: no such extension folder:", source: /home/drew/.atom/packages/emmet/lib/emmet.coffee (134)
+[9081:0206/131256:INFO:CONSOLE(11)] "activate linter-csslint", source: /home/drew/.atom/packages/linter-csslint/lib/init.coffee (11)
+[9081:0206/131256:INFO:CONSOLE(11)] "activate linter-js-yaml", source: /home/drew/.atom/packages/linter-js-yaml/lib/init.coffee (11)
+[9081:0206/131256:INFO:CONSOLE(11)] "activate linter-jshint", source: /home/drew/.atom/packages/linter-jshint/lib/init.coffee (11)
+[9081:0206/131256:INFO:CONSOLE(7)] "activate linter-tidy", source: /home/drew/.atom/packages/linter-tidy/lib/init.coffee (7)
+[9081:0206/131256:INFO:CONSOLE(11)] "open-last-project:activate", source: /home/drew/.atom/packages/open-last-project/lib/main.js (11)
+[9081:0206/131257:INFO:CONSOLE(62)] "Window load time: 3870ms", source: file:///usr/share/atom/resources/app/static/index.js (62)
+[9691:0206/142004:INFO:renderer_main.cc(211)] Renderer process started
+[9081:0206/142008:INFO:CONSOLE(117)] "Loading Emmet extensions from", source: /home/drew/.atom/packages/emmet/lib/emmet.coffee (117)
+[9081:0206/142008:INFO:CONSOLE(134)] "Emmet: no such extension folder:", source: /home/drew/.atom/packages/emmet/lib/emmet.coffee (134)
+[9081:0206/142008:INFO:CONSOLE(11)] "activate linter-csslint", source: /home/drew/.atom/packages/linter-csslint/lib/init.coffee (11)
+[9081:0206/142008:INFO:CONSOLE(11)] "activate linter-js-yaml", source: /home/drew/.atom/packages/linter-js-yaml/lib/init.coffee (11)
+[9081:0206/142008:INFO:CONSOLE(11)] "activate linter-jshint", source: /home/drew/.atom/packages/linter-jshint/lib/init.coffee (11)
+[9081:0206/142008:INFO:CONSOLE(7)] "activate linter-tidy", source: /home/drew/.atom/packages/linter-tidy/lib/init.coffee (7)
+[9081:0206/142008:INFO:CONSOLE(11)] "open-last-project:activate", source: /home/drew/.atom/packages/open-last-project/lib/main.js (11)
+[9081:0206/142009:INFO:CONSOLE(175)] "Upgraded the following syntax theme selectors in `/home/drew/.atom/packages/seti-monokai/index.less` for shadow DOM compatibility:
+
+`.editor-colors` => `:host`
+`.editor .invisible-character` => `:host .invisible-character`
+`.editor .indent-guide` => `:host .indent-guide`
+`.editor .wrap-guide` => `:host .wrap-guide`
+`.editor .gutter` => `:host .gutter`
+`.editor .gutter .cursor-line` => `:host .gutter .cursor-line`
+`.editor .line-number.cursor-line-no-selection` => `:host .line-number.cursor-line-no-selection`
+`.editor .invisible` => `:host .invisible`
+`.editor .cursor` => `:host .cursor`
+`.editor .selection .region` => `:host .selection .region`
+`.editor .search-results .marker .region` => `:host .search-results .marker .region`
+`.editor .search-results .marker.current-result .region` => `:host .search-results .marker.current-result .region`
+`.editor .comment` => `:host .comment`
+`.editor .string` => `:host .string`
+`.editor .constant.numeric` => `:host .constant.numeric`
+`.editor .constant.language` => `:host .constant.language`
+`.editor .constant.character, .editor .constant.other` => `:host .constant.character, :host .constant.other`
+`.editor .keyword` => `:host .keyword`
+`.editor .storage` => `:host .storage`
+`.editor .storage.type` => `:host .storage.type`
+`.editor .entity.name.class` => `:host .entity.name.class`
+`.editor .entity.other.inherited-class` => `:host .entity.other.inherited-class`
+`.editor .entity.name.function` => `:host .entity.name.function`
+`.editor .entity.name.instance` => `:host .entity.name.instance`
+`.editor .variable.parameter` => `:host .variable.parameter`
+`.editor .entity.name.tag` => `:host .entity.name.tag`
+`.editor .entity.other.attribute-name` => `:host .entity.other.attribute-name`
+`.editor .support.function` => `:host .support.function`
+`.editor .support.constant` => `:host .support.constant`
+`.editor .support.type, .editor .support.class` => `:host .support.type, :host .support.class`
+`.editor .invalid` => `:host .invalid`
+`.editor .invalid.deprecated` => `:host .invalid.deprecated`
+`.editor .class.jade` => `:host .class.jade`
+`.editor .gfm .markup.heading` => `:host .gfm .markup.heading`
+`.editor .gfm .markup.underline` => `:host .gfm .markup.underline`
+`.editor .gfm .bold` => `:host .gfm .bold`
+`.editor .gfm .italic` => `:host .gfm .italic`
+`.editor .gfm .raw` => `:host .gfm .raw`
+`.editor .gfm .variable.list` => `:host .gfm .variable.list`
+`.editor .gfm .link` => `:host .gfm .link`
+`.editor .gfm .link .entity` => `:host .gfm .link .entity`
+
+See the upgrade guide for information on removing this warning.", source: /usr/share/atom/resources/app/src/styles-element.js (175)
+[9081:0206/142009:INFO:CONSOLE(62)] "Window load time: 4817ms", source: file:///usr/share/atom/resources/app/static/index.js (62)
+atom: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+[9124:0206/162812:ERROR:x11_util.cc(82)] X IO error received (X server probably went away)
