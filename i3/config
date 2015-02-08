@@ -32,12 +32,44 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# jump to urgent window
+bindsym $mod+x [urgent=latest] focus
+
+# Set monitor to sleep
+exec --no-startup-id xset dpms 600
+
+# Set default terminal
+set $TERMINAL gnome-terminal
+
+# Add a small delay to prevent suspend races
+# https://bugs.launchpad.net/ubuntu/+source/unity-2d/+bug/830348
+set $Locker i3lock && sleep 1
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+Pause mode "$mode_system"
+
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# set background
+exec --no-startup-id feh --randomize --bg-fill ~/.wallpapers/*
 
 # change focus
 bindsym $mod+j focus left
@@ -89,11 +121,22 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+#set $tag1 "1: misc"
+#set $tag2 "2: term"
+#set $tag3 "3: www"
+#set $tag4 "4: dev"
+#set $tag5 "5"
+#set $tag6 "6"
+#set $tag7 "7"
+#set $tag8 "8"
+#set $tag9 "9"
+#set $tag10 "10" -->
+
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
+bindsym $mod+1 workspace 1: misc
+bindsym $mod+2 workspace 2: term
+bindsym $mod+3 workspace 3: www
+bindsym $mod+4 workspace 4: dev
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -112,6 +155,13 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+#rename workspace number 2 to "2: term"
+
+# application workspace assignments
+assign [class="terminal"] 2: term
+assign [class="chrome"] 3: www
+assign [class="Atom"] 4: dev
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
