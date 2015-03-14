@@ -3,5 +3,9 @@ Just a collection of config files for my development environment
 
 ## Install
 ```bash
-git clone git@github.com:drewzh/dotfiles.git ~/.dotfiles && sh ~/.dotfiles/install
+git clone git@github.com:drewzh/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+git submodule init
+git submodule update
+./install
 ```
