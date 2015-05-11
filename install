@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for f in gitconfig zshrc zshenv atom i3
+for f in gitconfig zshrc zshenv
 do
     ln -vs ~/.dotfiles/$f ~/.$f
 done
