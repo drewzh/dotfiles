@@ -3,3 +3,5 @@
 	email = me@drewzh.com
 [color]
 	ui = auto
+[push]
+	default = simple

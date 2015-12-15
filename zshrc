@@ -1,27 +1,30 @@
-source ~/.dotfiles/antigen/antigen.zsh
+# Source zgen
+source ~/.dotfiles/zgen/zgen.zsh
 
-# LOAD OH MY ZSH
-antigen use oh-my-zsh
+if ! zgen saved; then
+    echo "Saving zgen config..."
 
-# OH MY PLUGINS
-antigen bundle git
-antigen bundle heroku
-antigen bundle nmap
-antigen bundle command-not-found
-antigen bundle systemd
-antigen bundle sudo
-antigen bundle node
-antigen bundle npm
-antigen bundle grunt
-antigen bundle docker
-antigen bundle adb
-antigen bundle history-substring-search
+    # Load OMZSH
+    zgen oh-my-zsh
 
-# SYNTAX HIGHLIGHTING
-antigen bundle zsh-users/zsh-syntax-highlighting
+    # Setup theme
+    zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 
-# THEME
-antigen theme agnoster
+    # Load Plugins
+    zgen oh-my-zsh plugins/sudo
+    zgen oh-my-zsh plugins/git
+    zgen oh-my-zsh plugins/heroku
+    zgen oh-my-zsh plugins/nmap
+    zgen oh-my-zsh plugins/command-not-found
+    zgen oh-my-zsh plugins/systemd
+    zgen oh-my-zsh plugins/sudo
+    zgen oh-my-zsh plugins/node
+    zgen oh-my-zsh plugins/npm
+    zgen oh-my-zsh plugins/grunt
+    zgen oh-my-zsh plugins/docker
+    zgen oh-my-zsh plugins/adb
+    zgen oh-my-zsh plugins/history-substring-search
 
-# APPLY
-antigen apply
+    zgen load unixorn/autoupdate-zgen
+    zgen load zsh-users/zsh-syntax-highlighting
+fi
