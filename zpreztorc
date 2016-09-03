@@ -1,1 +1,1 @@
-zstyle ':prezto:module:prompt' theme 'paradox'
+zstyle ':prezto:*:*' color 'yes'
