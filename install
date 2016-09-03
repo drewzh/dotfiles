@@ -1,6 +1,23 @@
 #!/bin/sh
 
-for f in gitconfig zshrc zshenv zpreztorc
+# Install brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install applications
+brew install cask zsh
+brew cask install google-chrome hyperterm visual-studio-code vlc istat-menus
+
+# Change shell to ZSH
+if [ ! "$SHELL" = "/bin/zsh" ]; then
+  chsh -s /bin/zsh
+fi
+
+# Install Powerline Fonts
+./powerline-fonts/install.sh
+
+# Symlink directories into ~/
+for f in gitconfig zshrc zshenv zpreztro hyperterm
 do
+    rm ~/.$f
     ln -vs ~/.dotfiles/$f ~/.$f
 done
