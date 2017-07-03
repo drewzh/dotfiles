@@ -1,5 +1,4 @@
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
+export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:~/.scripts:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

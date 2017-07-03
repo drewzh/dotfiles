@@ -7,6 +7,7 @@ if ! zgen saved; then
     zgen prezto
 
     # Load Plugins
+    zgen prezto osx
     zgen prezto completion
     zgen prezto git
     zgen prezto dnf
