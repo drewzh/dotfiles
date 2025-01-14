@@ -18,18 +18,21 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
+# Load powerlevel10k theme first, without waiting
+zinit ice depth=1
+zinit light romkatv/powerlevel10k
+
+# Load other plugins with deferred loading
+zinit wait lucid light-mode for \
+    zsh-users/zsh-syntax-highlighting \
+    zsh-users/zsh-completions \
+    zsh-users/zsh-autosuggestions \
+    zsh-users/zsh-history-substring-search \
+    sei40kr/zsh-lazy-nvm \
     zdharma-continuum/zinit-annex-as-monitor \
     zdharma-continuum/zinit-annex-bin-gem-node \
     zdharma-continuum/zinit-annex-patch-dl \
-    zdharma-continuum/zinit-annex-rust \
-    romkatv/powerlevel10k \
-    zsh-users/zsh-autosuggestions \
-    zsh-users/zsh-completions \
-    zsh-users/zsh-history-substring-search \
-    zsh-users/zsh-syntax-highlighting
+    zdharma-continuum/zinit-annex-rust
 
 # Created by `pipx` on 2024-09-02 13:03:04
 export PATH="$PATH:/Users/andrew.higginson/.local/bin"
