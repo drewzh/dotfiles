@@ -18,17 +18,19 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-# Load powerlevel10k theme first, without waiting
-zinit ice depth=1
+# Load powerlevel10k theme
 zinit light romkatv/powerlevel10k
 
-# Load other plugins with deferred loading
-zinit wait lucid light-mode for \
-    zsh-users/zsh-syntax-highlighting \
-    zsh-users/zsh-completions \
+# Load essential plugins
+zinit light-mode for \
     zsh-users/zsh-autosuggestions \
+    zsh-users/zsh-completions \
+    zsh-users/zsh-syntax-highlighting \
     zsh-users/zsh-history-substring-search \
-    sei40kr/zsh-lazy-nvm \
+    sei40kr/zsh-lazy-nvm
+
+# Load annexes
+zinit light-mode for \
     zdharma-continuum/zinit-annex-as-monitor \
     zdharma-continuum/zinit-annex-bin-gem-node \
     zdharma-continuum/zinit-annex-patch-dl \
