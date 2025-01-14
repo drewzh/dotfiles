@@ -44,9 +44,6 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-# Use the built-in Zsh widget "complete-word" for Tab.
-bindkey '^I' complete-word
-
 # Zsh Completion
 autoload -Uz compinit
 compinit

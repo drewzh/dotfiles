@@ -5,6 +5,7 @@ APPS=(
     "google-chrome"
     "visual-studio-code"
     "alacritty"
+    "font-hack-nerd-font"
 )
 
 # Check if brew is installed
