@@ -1,0 +1,4 @@
+# Ensure env vars aren't included
+*zshenv
+# Ignore local git config
+.gitconfig.local

@@ -1,9 +1,0 @@
-[user]
-    name = drewzh
-    email = me@drewzh.com
-[color]
-    ui = auto
-[push]
-    default = current
-[credential]
-    helper = osxkeychain
