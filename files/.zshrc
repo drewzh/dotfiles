@@ -27,7 +27,7 @@ zinit light-mode for \
     zsh-users/zsh-completions \
     zsh-users/zsh-syntax-highlighting \
     zsh-users/zsh-history-substring-search \
-    sei40kr/zsh-lazy-nvm
+    dominik-schwabe/zsh-fnm
 
 # Load annexes
 zinit light-mode for \
