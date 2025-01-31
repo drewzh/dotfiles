@@ -10,5 +10,6 @@ helper = /usr/local/share/gcm-core/git-credential-manager
 helper = osxkeychain
 [pull]
 default = current
+	rebase = false
 [credential "https://dev.azure.com"]
 useHttpPath = true
