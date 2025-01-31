@@ -1,4 +1,4 @@
-![logo](prompt.gif)
+![logo](prompt.png)
 
 # dotfiles
 

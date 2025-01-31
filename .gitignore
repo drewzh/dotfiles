@@ -2,3 +2,4 @@
 *zshenv
 # Ignore local git config
 .gitconfig.local
+.DS_Store
